@@ -52,6 +52,6 @@
 
  validatePassword.validate("1234");
  validatePassword.validate("123456789");
- validatePassword.validate ("ChinaraChinara")
+ validatePassword.validate ("ChinaraChinara");
 
  console.log (validatePassword.validate ("Chinara1993!!!"))
