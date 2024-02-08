@@ -33,7 +33,7 @@
 
  const validatePassword = {
     validate: function (password){
-        if (password.length > 8) {
+        if (password.length < 8) {
             throw new Error ("The password must be at least 8 characters long");
         }
 
