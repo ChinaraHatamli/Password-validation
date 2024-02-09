@@ -28,7 +28,6 @@
   
  //  validatePassword.validate("Amil123455@"); // yanlisdir, en azi 1 eded xususi simvol olmalidir
   
- //  console.log(validatePassword.validate("Amil@@@@@@@@1212"))
 
 
  const validatePassword = {
@@ -41,7 +40,7 @@
            throw new Error("The password must be contain at least 1 special character");
         }
 
-        if (password < 3){
+        if (!(password.match(/[1-9]\d\d/g))){
             throw new Error ("The password must contain at least three number");
         }
 
@@ -50,8 +49,8 @@
     }
  }
 
- validatePassword.validate("1234");
- validatePassword.validate("123456789");
- validatePassword.validate ("ChinaraChinara");
+ //validatePassword.validate("1234");
+ //validatePassword.validate("123456789!");
+ //validatePassword.validate ("Chinara!12");
 
- console.log (validatePassword.validate ("Chinara1993!!!"))
+ //console.log (validatePassword.validate ("Chinara1993!!!"))
